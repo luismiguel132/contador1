@@ -1,7 +1,3 @@
-document.getElementById("number__add");
-document.getElementById("number__reset");
-document.getElementById("number__remove");
-document.getElementById("numeros")
 
 const displayNumero = document.querySelector(".numeros");
 

@@ -19,13 +19,12 @@ body {
     max-height: 450px;
     min-height: 100px;
     display: flex;
-    flex-direction: column;  /* Organiza os elementos na vertical */
+    flex-direction: column; 
     align-items: center;
-    justify-content: space-between; /* Dá espaço entre os elementos */
+    justify-content: space-between; 
     padding: 20px;
-    box-sizing: border-box; /* Inclui o padding no tamanho total */
+    box-sizing: border-box; 
     border-radius: 20px;
-    /* Definindo largura máxima */
     max-width: 100%;
 }
 
@@ -36,13 +35,13 @@ body {
 }
 
 .number {
-    background-color: #ffffff36; /* Cor de fundo semi-transparente */
-    color: #10f075 !important; /* Cor do texto */
+    background-color: #ffffff36; 
+    color: #10f075 ; 
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    justify-content: center;
+    align-items: center; 
     width: 100%;
-    margin-bottom: 20px; /* Espaçamento entre o número e os botões */
+    margin-bottom: 20px; 
     border-radius: 10px;
     text-align: center;
     height: 70px;
@@ -51,7 +50,6 @@ body {
     cursor: default;
 }
 
-/* Container de botões */
 .buttons {
     display: flex;
     justify-content: space-between;
@@ -79,40 +77,39 @@ body {
     transform: scale(1.2);
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .container {
-        width: 80%; /* Reduz a largura da container para 80% da tela */
-        padding: 15px; /* Menos padding em telas menores */
+        width: 80%; 
+        padding: 15px; 
     }
 
     .number {
-        height: 60px; /* Reduz a altura do número */
-        font-size: 1.5rem; /* Ajusta o tamanho da fonte */
+        height: 60px; 
+        font-size: 1.5rem; 
     }
 
     .button {
-        width: 150px; /* Reduz a largura do botão */
-        height: 45px; /* Reduz a altura do botão */
-        margin: 10px; /* Menos margem */
+        width: 150px; 
+        height: 45px;
+        margin: 10px;
     }
 }
 
-/* Responsividade para telas pequenas (celulares) */
+
 @media (max-width: 480px) {
     .container {
-        width: 90%; /* Container ocupa 90% da largura da tela */
-        padding: 10px; /* Menos padding em telas muito pequenas */
+        width: 90%; 
+        padding: 10px; 
     }
 
     .number {
-        height: 50px; /* Menor altura para o número */
-        font-size: 1.2rem; /* Menor tamanho de fonte */
+        height: 50px; 
+        font-size: 1.2rem; 
     }
 
     .button {
-        width: 120px; /* Menor largura do botão */
-        height: 40px; /* Menor altura do botão */
-        margin: 5px; /* Menos margem */
+        width: 120px; 
+        height: 40px; 
+        margin: 5px; 
     }
 }
