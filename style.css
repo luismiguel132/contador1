@@ -2,10 +2,11 @@
 
 * {
     font-family: "Outfit", serif;
+    color: #fff;
 }
 
 body {
-    background-color: #fff;
+    background-color: #131212;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +15,7 @@ body {
 }
 
 .container {
-    background-color: #eee9e9;
+    background-color: #292828;
     width: 500px;
     max-height: 450px;
     min-height: 100px;
@@ -28,12 +29,12 @@ body {
 }
 
 h1 {
-    margin: 0 0 20px 0; /* Diminui a margem abaixo do título */
+    margin: 0 0 20px 0;
+     font-weight: 700;
 }
-
 .number {
-    background-color: #00000088; /* Cor de fundo semi-transparente */
-    color: green;
+    background-color: #ffffff36; /* Cor de fundo semi-transparente */
+    color: #10f075 !important; /* Cor do texto */
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
@@ -43,6 +44,7 @@ h1 {
     text-align: center;
     height: 70px;
     padding-top: 10px;
+    font-weight: 900;
 }
 
 .buttons {
@@ -63,4 +65,10 @@ h1 {
     border: none;
     border-radius: 10px;
     margin: 20px;
+    font-weight: 500;
+    transition: transform 0.3s ease-in-out;
+}
+
+.button:hover {
+    transform: scale(1.2);
 }
