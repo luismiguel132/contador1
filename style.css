@@ -2,7 +2,6 @@
 
 * {
     font-family: "Outfit", serif;
-    color: #fff;
 }
 
 body {
@@ -26,12 +25,16 @@ body {
     padding: 20px;
     box-sizing: border-box; /* Inclui o padding no tamanho total */
     border-radius: 20px;
+    /* Definindo largura máxima */
+    max-width: 100%;
 }
 
-h1 {
+.titulo {
     margin: 0 0 20px 0;
-     font-weight: 700;
+    font-weight: 700;
+    color: #fff;
 }
+
 .number {
     background-color: #ffffff36; /* Cor de fundo semi-transparente */
     color: #10f075 !important; /* Cor do texto */
@@ -45,13 +48,14 @@ h1 {
     height: 70px;
     padding-top: 10px;
     font-weight: 900;
+    cursor: default;
 }
 
+/* Container de botões */
 .buttons {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 100px;
 }
 
 .button {
@@ -67,8 +71,48 @@ h1 {
     margin: 20px;
     font-weight: 500;
     transition: transform 0.3s ease-in-out;
+    color: #fff;
+    cursor: pointer;
 }
 
 .button:hover {
     transform: scale(1.2);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 80%; /* Reduz a largura da container para 80% da tela */
+        padding: 15px; /* Menos padding em telas menores */
+    }
+
+    .number {
+        height: 60px; /* Reduz a altura do número */
+        font-size: 1.5rem; /* Ajusta o tamanho da fonte */
+    }
+
+    .button {
+        width: 150px; /* Reduz a largura do botão */
+        height: 45px; /* Reduz a altura do botão */
+        margin: 10px; /* Menos margem */
+    }
+}
+
+/* Responsividade para telas pequenas (celulares) */
+@media (max-width: 480px) {
+    .container {
+        width: 90%; /* Container ocupa 90% da largura da tela */
+        padding: 10px; /* Menos padding em telas muito pequenas */
+    }
+
+    .number {
+        height: 50px; /* Menor altura para o número */
+        font-size: 1.2rem; /* Menor tamanho de fonte */
+    }
+
+    .button {
+        width: 120px; /* Menor largura do botão */
+        height: 40px; /* Menor altura do botão */
+        margin: 5px; /* Menos margem */
+    }
 }
